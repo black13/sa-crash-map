@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>San Antonio Crash Atlas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: Helvetica, Arial, sans-serif; background: #f2f2f2; color: #222; }
+        .wrap { max-width: 760px; margin: 0 auto; padding: 28px 18px 60px; }
+        h1 { font-size: 22px; margin: 0 0 4px; }
+        .sub { color: #555; font-size: 13px; margin-bottom: 22px; }
+        .card {
+            display: block; background: #fff; border: 1px solid #ccc; border-radius: 8px;
+            padding: 14px 18px; margin-bottom: 12px; text-decoration: none; color: #222;
+        }
+        .card:hover { border-color: #c62828; box-shadow: 0 2px 8px rgba(0,0,0,.12); }
+        .card h2 { margin: 0 0 4px; font-size: 16px; color: #c62828; }
+        .card p { margin: 0; font-size: 13px; color: #555; line-height: 1.45; }
+        .note { font-size: 12px; color: #777; margin-top: 24px; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>San Antonio Crash Atlas</h1>
+        <div class="sub">TxDOT CRIS public crash data, mapped. Every dot is a real crash — hover for a quick look, click for the full record.</div>
+
+        <a class="card" href="sa-day-map.html">
+            <h2>Every Day of 2016 — 49,699 crashes</h2>
+            <p>Play the whole year day by day. Hover any dot for time, severity and location; click to pin the full record (case number, units, contributing factors, conditions) and copy it.</p>
+        </a>
+        <a class="card" href="sa-time-map.html">
+            <h2>The Danger Clock — hour by hour</h2>
+            <p>How SA's crash map reshapes across 24 hours. Watch the 5 PM rush swell and the 2 AM fatalities stay behind.</p>
+        </a>
+        <a class="card" href="sa-behavior-map.html">
+            <h2>Hit-and-Run &amp; Cut-Off Hot Spots (2016)</h2>
+            <p>The 30 worst intersections for fleeing drivers and no-contact cut-offs. #1: Ingram Rd &times; NW Loop 410 — 66 hit-and-runs in one year.</p>
+        </a>
+        <a class="card" href="sa-worst-intersections.html">
+            <h2>Worst Crash Intersections (2017–2021)</h2>
+            <p>Ranked severe-crash intersections with fatality counts.</p>
+        </a>
+        <a class="card" href="sa-worst-surface-intersections.html">
+            <h2>Worst Surface-Street Intersections (2017–2021)</h2>
+            <p>City streets only — no highways. With bus-stop proximity flags.</p>
+        </a>
+
+        <div class="note">
+            Sources: Texas Department of Transportation CRIS public extract (2016) and Alamo Area MPO
+            (2017–2021, severe-crash subset). Map tiles: OpenStreetMap contributors.
+            2016 counts are from the public extract as of 2026-09. More years being added as extracts are processed.
+        </div>
+    </div>
+</body>
+</html>
